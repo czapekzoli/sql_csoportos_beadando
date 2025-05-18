@@ -1,0 +1,25 @@
+Az adatbázis egy háziorvosi rendelő működését modellezi, tartalmazza: az orvosokat, pácienseket, időpontokat, vizsgálatokat és diagnózisokat.
+
+Orvos
+  orvos_id: az orvos egyedi azonosítója
+  nev: orvos neve
+  szakrendelo_szam: rendelő azonosítója vagy helyisége
+Paciens
+  paciens_id: páciens egyedi azonosítója
+  nev: páciens neve
+  szul_datum: születési dátum
+  taj_szam: TAJ-szám
+Idopont
+  idopont_id: időpont egyedi azonosítója
+  datum: időpont dátuma
+  ido: időpont időpontja (óra:perc)
+  orvos_id: kapcsolódó orvos azonosítója
+  paciens_id: kapcsolódó páciens azonosítója
+Diagnózis
+  diagnozis_id: diagnózis azonosítója
+  leiras: diagnózis szöveges leírása
+Vizsgalat
+  vizsgalat_id: vizsgálat azonosítója
+  idopont_id: kapcsolódó időpont azonosítója
+  diagnozis_id: kapcsolódó diagnózis azonosítója
+  megjegyzes: orvosi megjegyzés, javaslat
